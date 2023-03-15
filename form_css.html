@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1{
+            background:rgb(113, 155, 179);
+            color:aliceblue;
+            
+        }
+        form{
+            background:rgb(122, 165, 133);
+        }
+        /* td{
+            background:honeydew;
+        }
+        input{
+            background-color:lightgray;
+        }
+        label{
+            color:mediumaquamarine;
+        } */
+
+    </style>
+    <link rel="stylesheet" href="abc.css">
+</head>
+<body>
+    <h1  align="center">
+        Css
+    </h1>
+    <form  >
+        <table cellspacing="5" cellpadding="5">
+            <tr>
+                <td><label for="name">Name</label></td>
+                <td><input type="text" id="name" placeholder="Type..." REQUIRED></td>
+            </tr>
+            <tr>
+                <td><label for="email">Email</label>
+                <td><input type="email" id="email" placeholder="type email" required></td>
+            </tr>
+            <tr>
+                <td><label for="dob">DOB</label>
+                </td>
+                <td><input type="date" id="dob"> <br>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="addr">Address</label>
+                </td>
+                <td><textarea name="" id="addr" cols="20" rows="5" style="background:grey"></textarea> <br>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="ph">Phone No</label>
+                </td>
+                <td><input type="tel" id="ph"> <br>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="a">Gender</label></td>
+                <td><input type="radio" name="a">
+                <label>Male</label> <br>
+                <input type="radio" name="a">
+                <label>Female</label></td> <br>
+                <!-- <input type="radio" name="a">
+                <label>Others</label></td>
+             -->
+            </tr>
+            <tr>
+                <td><label for = "hob">Hobbies</label></td>
+                <td>
+                    <input type="checkbox" id="hob"> <label>Football</label> <br>
+                    <input type="checkbox" id="hob"> <label>Cricket</label> <br>
+                    <input type="checkbox" id="hob"> <label>Reading</label>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="">Upload Photo</label>
+                </td>
+                <td><input type="file"> <br>
+                </td>
+            </tr>
+            <tr>
+                <td><label>Country</label></td>
+                <td>
+                    <select>
+                        <option>India</option>
+                        <option>China</option>
+                        <option>Korea</option>
+                        <option>Japan</option>
+                    </select>
+
+                </td>
+            </tr>
+            <tr>
+                <td><label for="pass">Password</label>
+                </td>
+                <td><input type="password" name="" id="pass" disabled> <br>
+                </td>
+            </tr>
+
+            <tr>    
+                <td colspan="2" align="center"><button>Submit</button></td>
+            </tr>
+
+        </table>
+    </form>
+</body>
+</html>
