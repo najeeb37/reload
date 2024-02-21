@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       #heading{
+        border:2px;
+        background-color: beige;
+        text-align: center;
+        width: 50%;
+        margin: auto;
+        height: 100px;
+        line-height: 100px;
+       }
+    </style>
+</head>
+<body>
+    <h1>java</h1>
+    <h1 id="tag">dom</h1>
+    <h1 class="box">react</h1>
+    <h1>html</h1>
+    <button onclick="change()">change</button> <br>
+    <button onclick="Reload()">reset</button>
+    <h1 id="heading1">Dom1</h1>
+    <h1 id="heading2">React1</h1>
+
+        <!-- <h1 id="heading"></h1>
+        <button onclick="setInterval(get_time,1000)">Display</button> -->
+
+    <h1 id ="blue">1.Java </h1>
+    <h1 class="orange">2. Java script</h1>
+    <h1 class="orange">3. Spring</h1>
+    <h1 class="orange">4. React</h1>
+    <h1 id ="blue">5. Html</h1>
+    <button onclick="color()">orange</button>
+
+
+
+    <script>
+
+        var butt = document.getElementsByTagName("button")
+        butt[0].style.backgroundColor="black"
+        butt[0].style.color="white"        
+        butt[1].style.backgroundColor="black"
+        butt[1].style.color="white"
+
+        // var ele = document.getElementsByTagName("*")
+        // console.log(ele)
+
+        function change()
+        {
+            var tag = document.getElementsByTagName("h1")
+            console.log(tag)
+            tag[0].style.color="orange"
+            tag[2].style.color="green"
+            tag[1].style.backgroundColor="black"
+            tag[1].style.color="blue"
+        }
+        function Reload()
+        {
+            location.reload()
+        }
+        
+        // var x = document.getElementById("heading1")
+        // console.log(x)
+
+        function get_time()
+        {
+            var x =  new Date()
+            console.log(x)
+            var h = x.getHours
+            var m = x.getMinutes
+            var s = x.getSeconds
+            console.log(h)
+            var  tag=document.getElementById("heading")
+            tag.innerHTML = "Time: " + h + ":" + m + ":" + s
+        }
+        function color()
+            {
+                var ele = document.getElementsByClassName("orange")
+                console.log(ele)
+                for(let i=0;i<=2;i++)
+                {
+                    ele[i].style.color="orange"
+                    ele[i].style.border="2px dotted green"
+                    ele[i].style.textAlign="center"
+                    ele[i].style.fontStyle="italic"
+                }
+            }
+
+
+
+    </script>
+
+
+</body>
+</html>

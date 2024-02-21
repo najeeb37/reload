@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 class="a">DOM</h1>
+    <h1>HTML</h1>
+    <h1 class="a">ReactJS</h1>
+    <h1 id="b">MongoDB</h1>
+    <h1 class="a">Metro js</h1>
+    <h1 id="c">Oomb</h1>
+    <button onclick="change()">change</button>
+
+
+
+
+    <script>
+        function change()
+        {
+            var d = document.getElementsByTagName("h1")
+            for(let i=0;i<=5;i++)
+            {
+                d[i].style.color="blue"
+            }
+            var a = document.getElementsByClassName("a")
+            console.log(a)
+            for(i=0;i<=2;i++)
+            [
+                a[i].style.border="2px solid red"
+            ]
+            var b = document.getElementById("b")
+            b.style.border="2px dotted green"
+            b.style.fontStyle="italic"
+
+            var c = document.getElementById("c")
+            c.style.backgroundColor="yellow"
+            c.style.color="red"
+            c.style.textAlign="center"
+        }
+    </script>
+</body>
+</html>
