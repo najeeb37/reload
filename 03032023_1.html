@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mark Calculator</title>
+    <style>
+        div{
+            border: 2px solid black;
+            padding: 20px;
+            width: 60%;
+            height: auto;
+            margin: auto;
+        }
+        input{
+            float: right;
+        }
+        form{
+            margin: auto;
+        }
+    </style>
+
+</head>
+<body>
+    <div>
+        <form>
+            <label>Physics</label>
+            <input type="number" id="phy" name="phy">
+            <br><br>
+            <label>Chemistry</label>
+            <input type="number" id="chem" name="chem">
+            <br><br>
+            <label>Biology</label>
+            <input type="number" id="bio" name="bio">
+            <br><br>
+            <label>Maths</label>
+            <input type="number" id="math" name="math">
+            <br><br>
+            
+            <button id="btn">Calculate</button>
+        </form>
+
+        <h1 id="res"></h1>
+    </div>
+
+    <script>
+            
+            var button = document.getElementById("btn")
+
+            button.addEventListener("click",function(d)
+            {
+                var m=document.getElementById("math").value
+                var p=document.getElementById("phy").value
+                var c=document.getElementById("chem").value
+                var b=document.getElementById("bio").value
+                var sum=parseInt(m)+parseInt(p)+parseInt(c)+parseInt(b);
+                var perc=sum/400.0*100;
+            
+                 console.log(perc)
+                 d.preventDefault()
+                 document.getElementById("res").innerHTML=perc
+
+        })   
+    </script>
+
+</body>
+</html>
