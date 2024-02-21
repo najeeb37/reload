@@ -1,0 +1,27 @@
+*{
+    background-color:darkseagreen;
+}
+div{
+    width: 25%;
+    height: 500px;
+    /* background-color: darkcyan; */
+    margin: auto;
+    border: 2px solid black;
+    box-shadow: 2px 2px 2px black;
+}
+
+button{
+    /* background-color:darkgrey; */
+    width: 80px;
+    height: 50px;
+    
+}
+
+button:hover{
+    width: 75px;
+    height: 46px;
+}
+div:hover{
+    width: 24.7%;
+    height: 495px;
+}
