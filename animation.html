@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation</title>
+    <style>
+        section{
+            
+        }
+
+        @keyframes abc{
+            0%{ background-color: antiquewhite; transform: scale(0);}
+            20%{ background-color: cadetblue; transform: scale(0.5);}
+            40%{ background-color: black; transform: scale(0.3);}
+            60%{ background-color: cyan; transform: rotate(180deg); transition: 3s ;}
+            80%{background-color: aliceblue; transform: skew(100deg);
+
+            }
+            100%{ background-color: deeppink; transform: scale(.5);}
+        }
+
+        #a{
+            background-color: yellow;
+            animation-name: abc;
+            animation-iteration-count: infinite;
+            animation-duration: 2s;
+            height: 100px;
+            width: 100px;
+            margin-left: 400px;
+            margin-top: 200px;
+            border-radius: 10%;
+            /* float: left;
+        } */
+        #b{
+            background-color: white;
+            animation-name: djX;
+            animation-iteration-count: infinite;
+            animation-duration: 2s;
+            height: 200px;
+            width: 200px;
+            margin-left: 400px;
+            margin-top: 200px;
+            border-radius: 50%;   
+            /* float: right; */
+            margin-right: 400px;
+        }
+        @keyframes djX{
+            0%{ background-color: rgb(182, 118, 35); transform: scale(0);}
+            20%{ background-color: rgb(173, 89, 153); transform: scale(0.5);}
+            40%{ background-color: rgb(175, 43, 43); transform: scale(1.00);}
+            60%{ background-color: rgb(160, 170, 62); transform:scale(1.5);}
+            80%{background-color: rgb(56, 192, 213); transform:scale(2.00);
+
+            }
+            100%{ background-color: deeppink; transform: scale(.5);}
+        
+        }
+
+
+    </style>
+
+</head>
+<body bgcolor="##999999">
+    <section>
+        <div id="a">
+
+        </div>
+        <div id="b">
+
+        </div>
+        
+    </section>
+    <audio src="./palaji.mp3"></audio>
+</body>
+</html>
