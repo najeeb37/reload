@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        input,button{
+            padding: 10px;
+            height: 30px;
+        }
+        fieldset{
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h2>local storage-java script</h2>
+
+    <fieldset>
+        <legend>insert data</legend>
+        <input type="text" placeholder="enter key" id="inputkey">
+        <input type="text" placeholder="enter value" id="inputvalue">
+        <button id="btn" type="button">submit</button>
+    </fieldset>
+
+    <fieldset>
+        <legend>local storage</legend>
+        <div id="output"></div>
+    </fieldset>
+
+    <script>
+        const inputkey = document.getElementById("inputvalue")
+        const inputvalue = document.getElementById("inputkey")
+        const button=document.getElementById("btn")
+        const output=document.getElementById("output")
+        button.onclick=()=>{
+            const key1 = inputkey.value
+            const value1 = inputvalue.value
+            if(key1 && value1)
+            {
+                localStorage.setItem(value1,key1)
+                location.reload
+            }
+        }
+        for(i=0;i<localStorage.length;i++)
+        {
+            const k= localStorage.key(i)
+            const v=localStorage.getItem (k)
+            output.innerHTML= k + " : " + v + "<br>"
+        }
+    </script>
+
+</body>
+</html>
